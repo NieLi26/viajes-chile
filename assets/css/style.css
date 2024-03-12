@@ -1,0 +1,83 @@
+:root {
+    --fuentePrincipal: "Roboto", sans-serif;
+    --separacion: 5rem;
+    --primario:#0e0f0f; 
+    --secundario: #0f93eb;
+    --oscuro: #000;
+    --blanco: #FFF; 
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 var(--separacion) 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+
+/* HEADER */
+
+.navbar-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 4rem;
+}
+
+.navbar-logo p {
+    font-size: 2rem;
+}
+
+.navbar-toggler-icon  {
+    font-size: 1.6rem;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    /* object-position: center; */
+}
