@@ -1,0 +1,36 @@
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+$().ready(function() {
+    $('#enviarCorreo').click(function(){
+        alert('El correo fue enviado correctamente...')
+    })
+
+    function cambiarColor(current) {
+        if ( current.style.color !== "red" ) {
+            $(current).css({
+                color: 'red'
+            })
+            return
+        }
+        
+        $(current).css({
+            color: 'white'
+        })
+    }
+
+    const headings = ['.nosotros__heading', '.destacados__heading', '.contacto__heading']
+
+    headings.forEach( head => {
+        $(head).on('dblclick', function() {
+            cambiarColor(this)
+        })
+    })
+
+    $('.card').each((i, v) => {
+        $(v).click(function() {
+            $(this).find('.card-text').toggle()
+        })
+    });
+})

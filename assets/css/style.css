@@ -1,10 +1,11 @@
 :root {
-    --fuentePrincipal: "Roboto", sans-serif;
+    --fuentePrincipal: "Raleway", sans-serif;
     --separacion: 5rem;
     --primario:#0e0f0f; 
     --secundario: #2ee0e0;
     --oscuro: #000;
-    --blanco: #FFF; 
+    --blanco: #FFF;
+    --gris: #4d5252;
 }
 
 html {
@@ -51,6 +52,10 @@ h1 {
 h2 {
     font-size: 3.6rem;
     font-weight: 400;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    width: 90%;
+    margin: 0 auto var(--separacion) auto;
 }
 h3 {
     font-size: 3.2rem;
@@ -101,9 +106,10 @@ h3 {
     padding: var(--separacion) 0;
 }
 
-.nosotros__heading {
-    color: var(--blanco);
-}
+/* .nosotros__heading {
+    text-decoration: underline;
+    text-underline-offset: 2rem;
+} */
 .tarjeta {
     color: var(--blanco);
 }
@@ -200,9 +206,19 @@ h3 {
 }
 .footer__heading {
     margin-bottom: 0;
+    padding-bottom: 0;
+    border: unset;
 }
 
 .icon i {
     font-size: 4rem;
     color: var(--blanco);
+}
+
+
+.tooltip-inner {
+    background-color: var(--gris);
+    font-size: 1.5rem;
+    /* box-shadow: 0px 0px 4px black;
+    opacity: 1 !important; */
 }
