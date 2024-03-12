@@ -11,9 +11,9 @@
     <title>Viajes Chile</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header position-relative">
 
-        <nav class="navbar navbar-dark navbar-expand-lg py-4 z-1">
+        <nav class="navbar navbar-dark navbar-expand-lg py-4 fixed-top">
             <div class="container">
                 <a class="navbar-brand navbar-logo" href="index.html">
                 <img src="assets/img/viajes.svg" alt="logo">
@@ -44,7 +44,7 @@
             </div>
         </nav>
 
-        <div id="carouselExample" class="carousel slide position-fixed top-0">
+        <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="assets/img/carousel1.jpg" class="d-block" alt="carousel 1">
@@ -67,6 +67,40 @@
         </div>
     </header>
 
+    <section class="nosotros">
+        <div class="container">
+            <h2 class="nosotros__heading text-center">¿Quiénes Somos?</h2>
+            <div class="nosotros__grid row row-cols-1 row-cols-md-3 g-5 ">
+                <div class="tarjeta">
+                    <div class="tarjeta__icon text-center">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <p class="card__contenido">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad voluptas, praesentium corporis omnis neque ipsa voluptatem, illum minima hic repellat culpa quae unde ipsum est qui laboriosam, nam ex officiis!
+                        Molestias quam vero esse, debitis rem odio velit adipisci maxime placeat minus eum delectus saepe, corporis atque a enim architecto modi ipsam! Similique excepturi accusantium aperiam fugiat, eos natus placeat?
+                    </p>
+                </div>
+                <div class="tarjeta d-flex flex-column flex-md-column-reverse">
+                    <div class="tarjeta__icon text-center">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <p class="card__contenido">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad voluptas, praesentium corporis omnis neque ipsa voluptatem, illum minima hic repellat culpa quae unde ipsum est qui laboriosam, nam ex officiis!
+                        Molestias quam vero esse, debitis rem odio velit adipisci maxime placeat minus eum delectus saepe, corporis atque a enim architecto modi ipsam! Similique excepturi accusantium aperiam fugiat, eos natus placeat?
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <div class="tarjeta__icon text-center">
+                        <i class="fa-solid fa-route"></i>
+                    </div>
+                    <p class="card__contenido">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad voluptas, praesentium corporis omnis neque ipsa voluptatem, illum minima hic repellat culpa quae unde ipsum est qui laboriosam, nam ex officiis!
+                        Molestias quam vero esse, debitis rem odio velit adipisci maxime placeat minus eum delectus saepe, corporis atque a enim architecto modi ipsam! Similique excepturi accusantium aperiam fugiat, eos natus placeat?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <script src="https://kit.fontawesome.com/dbbe80d297.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

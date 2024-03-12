@@ -2,7 +2,7 @@
     --fuentePrincipal: "Roboto", sans-serif;
     --separacion: 5rem;
     --primario:#0e0f0f; 
-    --secundario: #0f93eb;
+    --secundario: #2ee0e0;
     --oscuro: #000;
     --blanco: #FFF; 
 }
@@ -21,6 +21,7 @@ html {
 body {
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
+    background-color: var(--primario);
 }
 
 a {
@@ -40,6 +41,8 @@ h1,
 h2,
 h3 {
     margin: 0 0 var(--separacion) 0;
+    text-transform: uppercase;
+    color: var(--blanco);
 }
 
 h1 {
@@ -47,12 +50,23 @@ h1 {
 }
 h2 {
     font-size: 3.6rem;
+    font-weight: 400;
 }
 h3 {
     font-size: 3.2rem;
 }
 
+/* UTILIDADES */
+
 /* HEADER */
+
+/* .navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+} */
 
 .navbar-logo {
     display: flex;
@@ -80,4 +94,26 @@ h3 {
     height: 100%;
     object-fit: cover;
     /* object-position: center; */
+}
+
+/* NOSOTROS */
+.nosotros {
+    padding: var(--separacion) 0;
+}
+
+.nosotros__heading {
+    color: var(--blanco);
+}
+.tarjeta {
+    color: var(--blanco);
+}
+.tarjeta__icon {
+    background-color: var(--secundario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem 0;
+}
+.tarjeta__icon i {
+    font-size: 2.5rem;
 }
