@@ -117,3 +117,21 @@ h3 {
 .tarjeta__icon i {
     font-size: 2.5rem;
 }
+
+/* DESTACADOS */
+.card {
+    background: transparent;
+}
+.card img {
+    height: 15rem;
+    object-fit: cover;
+}
+.card-body {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding-bottom: 3rem;
+}
+.card-title {
+    font-size: 2rem;
+    font: 400;
+}
