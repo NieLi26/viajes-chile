@@ -192,3 +192,17 @@ h3 {
     opacity: .8;
     color: var(--blanco);
 }
+
+/* FOOTER */
+.footer {
+    background-color: var(--secundario);
+    padding: 2rem 0;
+}
+.footer__heading {
+    margin-bottom: 0;
+}
+
+.icon i {
+    font-size: 4rem;
+    color: var(--blanco);
+}
