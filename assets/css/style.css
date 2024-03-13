@@ -104,7 +104,7 @@ h3 {
 
 /* NOSOTROS */
 .nosotros {
-    padding: var(--separacion) 0;
+    padding-top: var(--separacion);
 }
 
 /* .nosotros__heading {
@@ -126,6 +126,9 @@ h3 {
 }
 
 /* DESTACADOS */
+.destacados {
+    padding: var(--separacion) 0;
+}
 .card {
     background: transparent;
 }
